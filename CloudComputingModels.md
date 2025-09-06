@@ -67,6 +67,7 @@ The cloud computing ecosystem is made up of:
 With more mobile users and a distributed workforce, organizations are depending on cloud apps and infrastructure. This shift makes cloud cybersecurity even more critical.
 
 According to NIST, there are three main service models:
+
 🔹 1. Infrastructure as a Service (IaaS)
 
 - Provides virtualized computing resources (VMs, storage, networks).
@@ -89,9 +90,9 @@ Example: Heroku, Google App Engine, AWS Elastic Beanstalk.
 Example: Gmail, Salesforce, Office 365.
 
 
-|IaaS = Rent infrastructure.|
-|PaaS = Build on platform.|
-|SaaS = Use software.|
+> IaaS = Rent infrastructure. <br>
+> PaaS = Build on platform. <br>
+> SaaS = Use software.
 
 ---
 
@@ -138,10 +139,10 @@ Example: Use private for core apps, public for new apps.
 
 👉 Best for flexibility and balance.
 
-|Public = Anyone can use.|
-|Community = Group of orgs.|
-|Private = One org only.|
-|Hybrid = Mix & match.|
+> Public = Anyone can use. <br>
+> Community = Group of orgs. <br>
+> Private = One org only. <br>
+> Hybrid = Mix & match.
 
 ---
 
