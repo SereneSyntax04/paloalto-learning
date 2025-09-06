@@ -248,6 +248,6 @@ Misconfigurations, such as open ports or excessive privileges, further widen the
 > 👉 **Summary:** Serverless = focus on building apps while the provider manages infrastructure & security basics.  
 
 <p align="center">
-  <img src="" alt="Serverless Computing" width="600"/>
+  <img src="https://github.com/SereneSyntax04/paloalto-learning/blob/fed05a1d01410ed88a7ab790d5b842abb1297594/images/owner-and-FAAS-provider.png" alt="Serverless Computing" width="600"/>
 </p>
 
