@@ -225,7 +225,11 @@ Misconfigurations, such as open ports or excessive privileges, further widen the
 
 **Serverless architectures** (also called **Function as a Service, FaaS**) allow organizations to build and deploy applications **without managing physical or virtual servers**.  <br>
 - Applications scale **elastically** with cloud workloads.  
-- Ideal for a wide range of **services and rapid deployments**.  
+- Ideal for a wide range of **services and rapid deployments**.
+- 
+<p align="center">
+  <img src="https://github.com/SereneSyntax04/paloalto-learning/blob/fed05a1d01410ed88a7ab790d5b842abb1297594/images/owner-and-FAAS-provider.png" alt="Serverless Computing" width="600"/>
+</p>
 
 <p align="center">
   <img src="" alt="Serverless Computing" width="600"/>
