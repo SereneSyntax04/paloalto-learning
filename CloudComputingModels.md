@@ -1,10 +1,12 @@
 # Cloud Computing Models
 
 ## What is Cloud Computing?
+
 - Cloud computing is not about a physical place. Instead, it is a collection of computing resources (like servers, storage, and applications) that you can quickly use whenever needed. 
 - These resources are provided on-demand and are managed automatically(by cloud service provider).
 
 ## Benefits of Cloud Computing
+
 1. Resource Pooling & Cost Savings
 - Resources (like servers, storage, etc.) are shared.
 - This lowers costs → economies of scale.
@@ -16,6 +18,7 @@
 - Scale up or down quickly based on your organization’s needs.
 
 ## 🌟 Other Benefits of Cloud / Virtual Systems
+
 1. Segmented Administration : Separate control for each org. 
 2. Scalability : Easy to add or remove customers/units
 3. Reduced Expenses : Saves money on hardware, electricity, rack space, and maintenance.
@@ -44,6 +47,7 @@
 ---
 
 # Cloud Computing Ecosystem
+
 The cloud computing ecosystem is made up of:
 - Service Models (IaaS, PaaS, SaaS)
 - Deployment Models (Public, Private, Hybrid, Community)
@@ -64,6 +68,7 @@ The cloud computing ecosystem is made up of:
 
 
 ## Cloud Computing Service Models
+
 With more mobile users and a distributed workforce, organizations are depending on cloud apps and infrastructure. This shift makes cloud cybersecurity even more critical.
 
 According to NIST, there are three main service models:
@@ -97,6 +102,7 @@ Example: Gmail, Salesforce, Office 365.
 ---
 
 ## Cloud Computing Deployment Models
+
 Modern organizations use a mix of public, private, community, and hybrid cloud environments. Each model comes with unique benefits and security challenges.
 
 🔹 1. Public Cloud
@@ -147,6 +153,7 @@ Example: Use private for core apps, public for new apps.
 ---
 
 ## Shared Responsibility Model
+
 When moving from on-premises → cloud, most security risks still exist. The difference is who handles what.
 
 1. Cloud Provider → Responsible for security of the cloud (infrastructure, data centers, physical security, networking, storage, compute, virtualization).
@@ -163,7 +170,8 @@ When moving from on-premises → cloud, most security risks still exist. The dif
 
 ---
 
-## Network Security vs. Cloud Security
+## Network Security vs. Cloud Security 
+
 Traditional Network Security
 
 - Fixed environment.
@@ -186,6 +194,7 @@ Cloud Security
 ---
 
 ## Securing the Cloud
+
 As organizations move from traditional data centers to public, private, or hybrid cloud, security strategies must adapt.
 
 1️⃣ Consistent Security

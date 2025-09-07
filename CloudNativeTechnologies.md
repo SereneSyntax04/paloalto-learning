@@ -227,6 +227,10 @@ Misconfigurations, such as open ports or excessive privileges, further widen the
 - Applications scale **elastically** with cloud workloads.  
 - Ideal for a wide range of **services and rapid deployments**.  
 
+<p align="center">
+  <img src="" alt="Serverless Computing" width="600"/>
+</p>
+
 
 ## 🌟 Benefits of Serverless Computing & FaaS  
 
@@ -247,7 +251,4 @@ Misconfigurations, such as open ports or excessive privileges, further widen the
 
 > 👉 **Summary:** Serverless = focus on building apps while the provider manages infrastructure & security basics.  
 
-<p align="center">
-  <img src="" alt="Serverless Computing" width="600"/>
-</p>
 
