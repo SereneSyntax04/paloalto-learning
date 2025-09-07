@@ -2,52 +2,42 @@
 
 Cloud Native Technologies → Tools & resources built for the cloud environment, making apps scalable, portable, and efficient.
 
-VMs = full apartment 🏠 (you manage everything) [Traditional, stateful]
-
-Containers = shared flat 🏢 (light, efficient, some shared resources) [Lightweight, share host OS kernel.]
-
-Serverless = hotel room 🛎️ (you just show up, provider handles the rest) [Stateless bundles of app code.]
+| Type       | Analogy                             | Characteristics                    |
+|------------|-------------------------------------|------------------------------------|
+| VMs        | Full apartment 🏠                  | Stateful, full OS, heavier        |
+| Containers | Shared flat 🏢                     | Lightweight, share host OS kernel |
+| Serverless | Hotel room 🛎️                     | Stateless, provider-managed       |
 
 ---
 
-## Three Core Properties of Cloud Native Technologies
+## Core Properties
 
 1️⃣ Container Packaged
 
 - Apps run inside containers → isolated, lightweight units.
-- Benefits:
-
-1. Better resource isolation.
-2. Easier code reuse & simplified operations.
-3. Improved developer experience.
+- Benefits: Better isolation, easier reuse, improved dev experience.
 
 
 2️⃣ Dynamically Managed
 
 - Apps/resources are centrally managed by an orchestrator (e.g., Kubernetes).
-- Benefits:
-
-1. Better resource utilization.
-2. Lower maintenance cost.
-3. Improves efficiency of workloads.
-
+- Benefits: Efficient scaling, self-healing, lower maintenance.
 
 3️⃣ Microserviced
 
 - Apps are built as loosely coupled microservices.
 - Dependencies defined via service endpoints/APIs.
-- Benefits:
-
-1. More agile development.
-2. Easier to scale & maintain apps.
+- Benefits: Agile dev, easy scaling & maintenance.
 
 
 ---
 
-## Cloud Native Technologies Hypervisor Terminology
+# Virtualization & Hypervisors
 
-Hypervisor
+### Hypervisor
 - Software that lets multiple virtual OS (guests) run on one physical machine (host).
+- It acts as a middle layer between:
+the hardware (kernel), and the operating systems running on top.
 
 1. Native Hypervisor (Type 1 / Bare Metal)
 - Runs directly on hardware (no host OS in between).
@@ -62,8 +52,7 @@ Example: VMware ESXi, Microsoft Hyper-V.
 Example: VirtualBox, VMware Workstation.
 
 
-
-## Virtualization and Hypervisors
+### Virtualization
 
 1. What is Virtualization?
 
@@ -73,38 +62,18 @@ Lets you run multiple Virtual Machines (VMs) on a single physical host.
 
 2. 🖥️ Virtual Machines (VMs)
 
-Act like separate computers.
-
-Can run different operating systems at the same time.
+Act like separate computers, can run different operating systems at the same time.
 
 Also called “virtual guest operating systems.”
 
-3. 📦 Shared Resources (from Host → to Guests)
-
-CPU (processors)
-
-Memory (DRAM)
-
-Storage (HDD/SSD)
-
-Network connections
-
 > One physical machine = many virtual computers sharing the same resources.
 
-4. Hypervisor
 
-A hypervisor is software that lets multiple virtual guest OSes run on a single physical host.
-
-It acts as a middle layer between:
-
-the hardware (kernel), and the operating systems running on top.
-
-
-## Security Considerations in Virtualization
+## Security Considerations in Virtualization (Risks)
 
 Virtualization improves efficiency, but it also introduces new security risks:
 
-💤 Dormant VMs
+### 💤 Dormant VMs
 
 Inactive/shut down for weeks or months.
 
@@ -112,19 +81,19 @@ May miss updates (patches, anti-malware).
 
 Become easy targets if reactivated unprotected.
 
-⚠️ Hypervisor Vulnerabilities
+### ⚠️ Hypervisor Vulnerabilities
 
 Hypervisor = core layer managing VMs.
 
 If compromised → all hosted VMs/resources are exposed.
 
-🔄 Intra-VM Communications
+### 🔄 Intra-VM Communications
 
 Traffic between VMs on the same physical host may not pass through physical switches.
 
 Results: less visibility, weak monitoring, harder troubleshooting.
 
-📈 VM Sprawl
+### 📈 VM Sprawl
 
 Rapid growth of virtual environments.
 
@@ -149,6 +118,11 @@ Since they share the host kernel, a compromise can impact all containers. <br>
 Using outdated or insecure images may introduce malware, while weak isolation can allow attackers to break out of a container and access the host system. <br>
 Misconfigurations, such as open ports or excessive privileges, further widen the attack surface. To reduce these risks, always scan container images, apply patches, and follow least-privilege practices.
 
+> Security Risks:
+>  - Shared kernel → breakout risks.
+>  - Insecure images, misconfigurations.
+
+
 ## ⚙️ Container Orchestration
 
 1. Kubernetes is the most widely used open-source orchestration platform.
@@ -167,7 +141,7 @@ Misconfigurations, such as open ports or excessive privileges, further widen the
 
 - Enables rapid scaling and efficient management of cloud native apps.
 
-2. Microservices
+2. Microservices (One micro-VM = one container in isolated OS instance.)
 
 - Breaks a large application into smaller, independent services.
 
@@ -178,15 +152,13 @@ Misconfigurations, such as open ports or excessive privileges, further widen the
 
 # Containers as a Service (CaaS)
 
-- CaaS = Cloud service model optimized for running containers at scale.
-
-- Built on orchestrators like Kubernetes, OpenShift, Mesos, Docker Swarm.
-
-- Manages compute, storage, and networking underneath → making container workloads easier to deploy.
+- Cloud model for running containers at scale.
+- Built on Kubernetes, OpenShift, Docker Swarm.
+- Handles compute, storage, networking → simplifies container deployment.
 
 ### Challenges with Orchestrators
 
-1. Complex to Set Up & Maintain → Even though they simplify microservices management, initial setup and ongoing maintenance remain difficult.
+1. Complex to Set Up & Maintain → initial setup and ongoing maintenance remain difficult.
 
 2. Difficult to Manage Hosts → Focus is on containers, not underlying hosts. Organizations still must manage compute, storage, and networking (often via automation or thin VMs).
 
@@ -194,45 +166,33 @@ Misconfigurations, such as open ports or excessive privileges, further widen the
 # 🖥️ Micro-VMs  
 
 ### 🔑 What are Micro-VMs?  <br>
-- **Micro-VMs** = **scaled-down, lightweight virtual machines** that run on hypervisor software.
-- Contain only the **Linux kernel features** needed to run a container.  
+- **Micro-VMs** = Lightweight VMs with just enough Linux kernel to run a container.
 
 
 ### ❓ Why Micro-VMs?  
 
-- **Containers** = fast & efficient, but weaker in **isolation/security**. 
-- **VMs** = stronger **isolation**, but more **complex & heavy**.  
-- **Micro-VMs** (e.g., **Kata Containers, VMware vSphere Integrated Containers, Amazon Firecracker**) → combine **best of both worlds**: <br>  
-  - Developer-friendly like containers. 
-  - Stronger **isolation** like VMs.  
+- Containers → Fast but weaker isolation.
+- VMs → Strong isolation but heavy.
+- Micro-VMs (e.g., Kata Containers, Firecracker) → Combine both: light like containers + strong isolation like VMs.
 
 
-### ⚙️ What Do Micro-VMs Provide?  
-
-- Users run containers as usual (e.g., `docker run`).  
-
-- Behind the scenes:  
-  - A new **VM** is created.  
-  - A container runtime starts inside it.
-  - The container executes in an **isolated OS instance**. 
-
-- Each micro-VM typically runs **one container** (or a pod-like set of related containers).  
-
+### 🚀 How It Works
+- User runs `docker run` as usual.
+- Behind the scenes:
+  - A micro-VM is created.
+  - Container runs inside isolated OS instance.
+- Usually, one micro-VM runs one container or related pod.
 
 ---
 
-# ☁️ Serverless Computing and Function as a Service (FaaS)  
+# ☁️ Serverless Computing & FaaS
 
 **Serverless architectures** (also called **Function as a Service, FaaS**) allow organizations to build and deploy applications **without managing physical or virtual servers**.  <br>
-- Applications scale **elastically** with cloud workloads.  
-- Ideal for a wide range of **services and rapid deployments**.
-- 
-<p align="center">
-  <img src="https://github.com/SereneSyntax04/paloalto-learning/blob/fed05a1d01410ed88a7ab790d5b842abb1297594/images/owner-and-FAAS-provider.png" alt="Serverless Computing" width="600"/>
-</p>
+- Scales elastically → Ideal for rapid, on-demand deployments.
+- Example: AWS Lambda, Azure Functions.
 
 <p align="center">
-  <img src="" alt="Serverless Computing" width="600"/>
+  <img src="https://github.com/SereneSyntax04/paloalto-learning/blob/fed05a1d01410ed88a7ab790d5b842abb1297594/images/owner-and-FAAS-provider.png" alt="Serverless Computing" width="600"/>
 </p>
 
 
@@ -256,3 +216,116 @@ Misconfigurations, such as open ports or excessive privileges, further widen the
 > 👉 **Summary:** Serverless = focus on building apps while the provider manages infrastructure & security basics.  
 
 
+## 🚀 How It Works
+
+- Upload app code/package.
+- Platform auto-packages, runs in container.
+- Developer doesn’t manage infra.
+
+👉 Behind the scenes → Containers used, but abstracted away.
+
+
+# 🚀 Adopting a Serverless Model  
+
+### ✅ Reduced Operational Overhead  
+- No servers to manage → no worries about scaling infrastructure, installing agents, or maintaining servers.  
+- Frees up developers and DevOps to focus on code.  
+
+### ⚡ Increased Agility  
+- Heavy reliance on **managed services** (databases, auth, etc.).  
+- Developers can focus purely on **business logic** deployed as functions (FaaS) like **AWS Lambda** or **Google Cloud Functions**.  
+
+### 💸 Reduced Costs  
+- Pay only for actual usage.  
+  - Example: AWS Lambda charges based on function execution time.  
+- No need to pay for idle VM capacity → saves money.  
+
+> 👉 **Key Takeaway:**  <br>
+> Serverless simplifies deployment, boosts speed, and cuts costs by offloading infrastructure management to the cloud provider.
+
+
+#  Serverless App Package and Environment  
+
+###  App Package  
+- In **serverless apps**, developers only upload the **app code/package**.  
+- No need to build full container images or include OS components.  
+- The platform automatically:  
+  - Packages the code into a container image.  
+  - Runs the image in a container.  
+  - Sets up the underlying OS, VM, and hardware as needed.  
+- Focused on **simplicity and efficiency** over full compatibility or control.  
+
+
+### ☁️ Serverless Environment Examples  
+- **Amazon Lambda**  
+- **Azure Functions**  
+- Some **PaaS offerings** (e.g., Pivotal Cloud Foundry) are effectively serverless, even if not marketed that way.  
+
+👉 Behind the scenes, **containers are extensively used**, though developers don’t interact with them directly.  
+
+
+> **Key Point:**  
+> Serverless abstracts away infrastructure and focuses on **just your code**, letting the provider handle all complexity.  
+
+
+
+# ⚠️ Issues with Serverless Architecture  
+
+### 🔺 Increased Attack Surface  
+- Serverless functions consume data from many sources:  
+  - HTTP APIs, message queues, cloud storage, IoT devices, etc.  
+- This creates a **much larger attack surface**.  
+- Many messages are complex and can’t be inspected by standard protections like **Web Application Firewalls (WAFs)**.  
+
+### 🧩 Attack Surface Complexity  
+- Hard to fully understand and map out attack vectors.  
+- Serverless is relatively new → many developers and architects are still learning how to secure it.  
+
+
+### 🌐 Overall System Complexity  
+- Visualizing and monitoring serverless applications is **more complex than traditional apps**.  
+- Lack of visibility makes troubleshooting and securing harder.  
+
+
+### 🔍 Inadequate Security Testing  
+- Security testing is complicated when apps:  
+  - Talk to third-party services.  
+  - Use cloud services like NoSQL DBs, cloud storage, stream processors.  
+- Automated security scanning tools aren’t fully adapted for serverless environments yet.  
+
+
+### 🚫 Traditional Security Protections Don’t Apply  
+- No access to underlying OS or servers →  
+  - Cannot use endpoint protection, host-based IPS, WAFs, etc.  
+- Existing security rules and detection logic don’t easily translate to serverless apps.  
+
+> 👉 **Key Takeaway:**  
+> Serverless offers simplicity and scalability but introduces **new security challenges** that require fresh strategies.  
+
+
+# 🛠️ Common Scanning Tools for Serverless Applications  
+
+### 🔍 Dynamic Application Security Testing (DAST)  
+- Tests only **HTTP interfaces**.  
+- Problematic for serverless apps consuming non-HTTP inputs or talking to cloud services.  
+- Poor at testing **RESTful APIs** that don’t follow classic HTML/HTTP request-response patterns.  
+
+
+### 📝 Static Application Security Testing (SAST)  
+- Analyzes source code using:  
+  - Data flow  
+  - Control flow  
+  - Semantic analysis  
+- Serverless apps = many small functions + event triggers →  
+  - High chance of **false positives** and **false negatives**.  
+  - Existing rulesets don’t fully support FaaS patterns → need evolution.  
+
+
+### ⚡ Interactive Application Security Testing (IAST)  
+- Better at detecting vulnerabilities vs DAST/SAST.  
+- Still limited by non-HTTP interfaces.  
+- Requires **local instrumentation agents**, which aren’t practical in serverless environments.  
+
+👉 **Key Insight:**  
+Traditional scanning tools aren’t fully adapted for serverless.  
+Serverless needs **new specialized security testing solutions** that understand event-driven and FaaS architectures.  
