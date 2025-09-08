@@ -165,7 +165,7 @@ Replaces the traditional SDLC by uniting **Dev & Ops teams** from start to finis
 <table>
   <tr>
     <td width="30%">
-      <img src="" alt="DevOps Diagram" width="100%">
+      <img src="https://github.com/SereneSyntax04/paloalto-learning/blob/25cec8babf73d41f90a2a66d3256551417d36e27/images/DevOpsModel.png" alt="DevOps Diagram" width="100%">
     </td>
     <td width="70%" style="vertical-align: top;">
 
@@ -206,7 +206,7 @@ A cycle of **Continuous Integration (CI)** and **Continuous Delivery/Deployment 
 <table>
   <tr>
     <td width="30%">
-      <img src="" alt="CI/CD Pipeline Diagram" width="100%">
+      <img src="https://github.com/SereneSyntax04/paloalto-learning/blob/25cec8babf73d41f90a2a66d3256551417d36e27/images/cicd.png" alt="CI/CD Pipeline Diagram" width="100%">
     </td>
     <td width="70%" style="vertical-align: top;">
 
@@ -258,7 +258,7 @@ Solves a key problem in DevOps:
 <table>
   <tr>
     <td width="30%">
-      <img src="" alt="DevSecOps Diagram" width="100%">
+      <img src="https://github.com/SereneSyntax04/paloalto-learning/blob/25cec8babf73d41f90a2a66d3256551417d36e27/images/DevSecOps.png" alt="DevSecOps Diagram" width="100%">
     </td>
     <td width="70%" style="vertical-align: top;">
 
