@@ -56,7 +56,7 @@ Defined by CNCF to provide a layered security model for Kubernetes in cloud-nati
 <table>
   <tr>
     <td width="30%">
-      <img src="" alt="Cloud Layer" width="100%">
+      <img src="https://github.com/SereneSyntax04/paloalto-learning/blob/e81a6eddb30041c97520b3584b59398747b2e1e9/images/cloud.png" alt="Cloud Layer" width="100%">
     </td>
     <td width="70%" style="vertical-align: top;">
       
@@ -74,7 +74,7 @@ Defined by CNCF to provide a layered security model for Kubernetes in cloud-nati
 <table>
   <tr>
     <td width="30%">
-      <img src="" alt="Cluster Layer" width="100%">
+      <img src="https://github.com/SereneSyntax04/paloalto-learning/blob/e81a6eddb30041c97520b3584b59398747b2e1e9/images/cluster.png" alt="Cluster Layer" width="100%">
     </td>
     <td width="70%" style="vertical-align: top;">
 
@@ -92,7 +92,7 @@ Defined by CNCF to provide a layered security model for Kubernetes in cloud-nati
 <table>
   <tr>
     <td width="30%">
-      <img src="" alt="Container Layer" width="100%">
+      <img src="https://github.com/SereneSyntax04/paloalto-learning/blob/e81a6eddb30041c97520b3584b59398747b2e1e9/images/container.png" alt="Container Layer" width="100%">
     </td>
     <td width="70%" style="vertical-align: top;">
 
@@ -111,7 +111,7 @@ Defined by CNCF to provide a layered security model for Kubernetes in cloud-nati
 <table>
   <tr>
     <td width="30%">
-      <img src="" alt="Code Layer" width="100%">
+      <img src="https://github.com/SereneSyntax04/paloalto-learning/blob/e81a6eddb30041c97520b3584b59398747b2e1e9/images/code.png" alt="Code Layer" width="100%">
     </td>
     <td width="70%" style="vertical-align: top;">
 
