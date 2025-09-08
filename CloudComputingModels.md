@@ -1,4 +1,4 @@
-# ☁️ Cloud Computing at a Glance
+<h1 align="center">Cloud Computing at a Glance</h1>
 
 ## What is Cloud Computing?
 - On-demand access to computing resources (servers, storage, apps).
@@ -28,9 +28,7 @@
 ---
 
 
-
-
-# Cloud Computing Ecosystem
+<h1 align="center">Cloud Computing Ecosystem</h1>
 
 The cloud computing ecosystem is made up of:
 - Service Models (IaaS, PaaS, SaaS)

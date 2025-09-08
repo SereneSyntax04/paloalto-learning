@@ -1,4 +1,4 @@
-# Cloud Native Technologies
+<h1 align="center"> Cloud Native Technologies </h1>
 
 Cloud Native Technologies → Tools & resources built for the cloud environment, making apps scalable, portable, and efficient.
 
@@ -32,7 +32,7 @@ Cloud Native Technologies → Tools & resources built for the cloud environment,
 
 ---
 
-# Virtualization & Hypervisors
+<h1 align="center"> Virtualization & Hypervisors </h1>
 
 ### Hypervisor
 - Software that lets multiple virtual OS (guests) run on one physical machine (host).
@@ -69,7 +69,7 @@ Also called “virtual guest operating systems.”
 > One physical machine = many virtual computers sharing the same resources.
 
 
-## Security Considerations in Virtualization (Risks)
+<h1 align="center"> Security Considerations in Virtualization (Risks) </h1>
 
 Virtualization improves efficiency, but it also introduces new security risks:
 
@@ -105,7 +105,7 @@ Makes issues like dormant VMs, hypervisor risks, and hidden VM traffic worse.
 ---
 
 
-# Containers
+<h1 align="center">Containers</h1>
 
 - A container is a lightweight, portable package that includes an application and everything it needs (libraries, dependencies).
 
@@ -163,7 +163,7 @@ Misconfigurations, such as open ports or excessive privileges, further widen the
 2. Difficult to Manage Hosts → Focus is on containers, not underlying hosts. Organizations still must manage compute, storage, and networking (often via automation or thin VMs).
 
 
-# 🖥️ Micro-VMs  
+<h1 align="center"> 🖥️ Micro-VMs  </h1>
 
 ### 🔑 What are Micro-VMs?  <br>
 - **Micro-VMs** = Lightweight VMs with just enough Linux kernel to run a container.
