@@ -43,7 +43,6 @@ Cortex Cloud’s **CNAPP (Cloud-Native Application Protection Platform)** secure
 
 **Cortex Cloud** secures apps *from code to cloud*, helping **security + DevOps teams** collaborate for faster, safer cloud-native development.
 
----
 
 ## 🔑 Key Point
 - Provides **CNAPP (Cloud-Native Application Protection Platform)** support across the full app lifecycle:
@@ -68,7 +67,6 @@ Cortex Cloud goes beyond basic compliance/config checks.
 - Uses **30+ data sources** for vulnerability intelligence → instant clarity on critical issues.  
 - Prevents insecure configs early in the **development pipeline** (before production).  
 
----
 
 ## 🔎 Visibility, Compliance & Governance
 
@@ -94,3 +92,46 @@ Cortex Cloud goes beyond basic compliance/config checks.
 
 
 > Cortex Cloud CSPM = **Visibility ✅ + Compliance ✅ + IaC Security ✅ + Risk Clarity ✅**
+
+---
+
+<h1 align="center">Data Security 🔒📊</h1>
+
+Cortex Cloud’s **Data Security** helps discover, classify & protect sensitive data stored in objects,  
+preventing **exposure, misuse, or sharing**.
+
+
+## 🔑 Key Capabilities
+
+### 1. **Data Visibility & Classification**
+- Full visibility into objects → by **region, owner, exposure level**.  
+- Fine-tune identifiers → detect SSNs, credit card numbers, driver’s licenses, etc.  
+
+### 2. **Data Governance**
+- Enforce policies to determine **risk profile** by classification & exposure.  
+- Enable compliance profiles → **PCI DSS, GDPR, SOC 2, HIPAA**.  
+- Generate **audit-ready reports** with one click.  
+
+### 3. **Malware Detection**
+- Detects **known & unknown threats** in files.  
+- Uses **WildFire service** to flag infected objects.  
+
+### 4. **Alerting & Remediation**
+- Auto-alerts for risky objects (by exposure & file type).  
+- Analysts can remediate → fix exposure, tag DevOps teams, or delete malware.  
+
+
+## 📊 Data Dashboard
+Cortex Cloud provides a **Data Dashboard tab** under the main console:  
+- Shows number of **buckets & objects**.  
+- Breaks down **data type, region, ownership & exposure**.  
+
+<p align="center">
+  <img src="images/data-dashboard.png" alt="Data Dashboard" width="70%">
+  <br>
+  <em>Data Dashboard: Complete visibility into object storage</em>
+</p>
+
+Cortex Data Security = **Visibility ✅ + Governance ✅ + Malware Protection ✅ + Auto-Remediation ✅**
+
+---
