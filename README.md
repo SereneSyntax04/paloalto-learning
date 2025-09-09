@@ -5,4 +5,4 @@ Notes and resources from my Palo Alto Cloud Security Fundamentals learning journ
 [Cloud Computing Models](https://github.com/SereneSyntax04/paloalto-learning/blob/main/CloudComputingModels.md) <br>
 [Cloud Native Technologies](https://github.com/SereneSyntax04/paloalto-learning/blob/main/CloudNativeTechnologies.md) <br>
 [Cloud Native Security](https://github.com/SereneSyntax04/paloalto-learning/blob/main/CloudNativeSecurity.md) <br>
-[Cortex Cloud Security Features]() <br>
+[Cortex Cloud Security Features](https://github.com/SereneSyntax04/paloalto-learning/blob/main/CortexCloudSecurityFeatures.md) <br>
