@@ -51,7 +51,7 @@ Cortex Cloud’s **CNAPP (Cloud-Native Application Protection Platform)** secure
   - **Run** → Continuous protection & monitoring.  
 
 <p align="center">
-  <img src="" alt="CNAPP Diagram" width="60%">
+  <img src="https://github.com/SereneSyntax04/paloalto-learning/blob/7aedb27857862633e9e301ee9f9bc15508c5effd/images/CNAPP.png" alt="CNAPP Diagram" width="60%">
 </p>
 
 > Cortex Cloud = Unified security across **CBDR (Code → Build → Deploy → Run)** ✅ + Better DevSecOps collaboration ✅
@@ -85,7 +85,7 @@ Cortex Cloud goes beyond basic compliance/config checks.
 
 
 <p align="center">
-  <img src="" alt="Compliance Overview Dashboard" width="70%">
+  <img src="https://github.com/SereneSyntax04/paloalto-learning/blob/7aedb27857862633e9e301ee9f9bc15508c5effd/images/Compliance.png" alt="Compliance Overview Dashboard" width="70%">
   <br>
   <em>Compliance Overview: Snapshot of your overall compliance posture across standards</em>
 </p>
@@ -127,7 +127,7 @@ Cortex Cloud provides a **Data Dashboard tab** under the main console:
 - Breaks down **data type, region, ownership & exposure**.  
 
 <p align="center">
-  <img src="images/data-dashboard.png" alt="Data Dashboard" width="70%">
+  <img src="https://github.com/SereneSyntax04/paloalto-learning/blob/7aedb27857862633e9e301ee9f9bc15508c5effd/images/Data%20Dashboard.png" alt="Data Dashboard" width="70%">
   <br>
   <em>Data Dashboard: Complete visibility into object storage</em>
 </p>
